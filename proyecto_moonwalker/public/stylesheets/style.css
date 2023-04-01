@@ -1,8 +1,106 @@
-body {
-  padding: 50px;
-  font: 14px "Inter", Helvetica, Arial, sans-serif;
+:root{
+  /*Esquema de color usado en la página*/
+  --Fresa; #c6262e;
+  --Fresa-100: #ff8c82;
+  --Fresa-300: #ed5353;
+  --Fresa-500: #c6262e;
+  --Fresa-700: #a10705;
+  --Fresa-900: #7a0000;
+
+  --Naranja:#f37329;
+  --Naranja-100:#ffc27d;
+  --Naranja-300:#ffa154;
+  --Naranja-500:#f37329;
+  --Naranja-700:#cc3b02;
+  --Naranja-900:#a62100;
+ 
+  --Plantano: #f9c440;
+  --Plantano-100:#fff394;
+  --Plantano-300:#ffe16b;
+  --Plantano-500:#f9c440;
+  --Plantano-700:#d48e15;
+  --Plantano-900:#ad5f00;
+ 
+  --Lima: #68b723;
+  --Lima-100: #d1ff82;
+  --Lima-300: #9bdb4d;
+  --Lima-500: #68b723;
+  --Lima-700: #3a9104;
+  --Lima-900: #206b00;
+
+  --Menta:#28bca3;
+  --Menta-100:#89ffdd;
+  --Menta-300:#43d6b5;
+  --Menta-500:#28bca3;
+  --Menta-700:#0e9a83;
+  --Menta-900:#007367;
+
+  --Arandano: #3689e6;
+  --Arandano-100: #8cd5ff;
+  --Arandano-300: #64baff;
+  --Arandano-500: #3689e6;
+  --Arandano-700: #0d52bf;
+  --Arandano-900: #002e99;
+
+  --Uva:#a56de2;
+  --Uva-100:#e4c6fa;
+  --Uva-300:#cd9ef7;
+  --Uva-500:#a56de2;
+  --Uva-700:#7239b3;
+  --Uva-900:#452981;
+
+  --Chicle:#de3e80;
+  --Chicle-100:#fe9ab8;
+  --Chicle-300:#f4679d;
+  --Chicle-500:#de3e80;
+  --Chicle-700:#bc245d;
+  --Chicle-900:#910e38;
+
+  --Cacao:#715344;
+  --Cacao-100:#a3907c;
+  --Cacao-300:#8a715e;
+  --Cacao-500:#715344;
+  --Cacao-700:#57392d;
+  --Cacao-900:#3d211b;
+
+  --Plata:#abacae;
+  --Plata-100:#fafafa;
+  --Plata-300:#d4d4d4;
+  --Plata-500:#abacae;
+  --Plata-700:#7e8087;
+  --Plata-900:#555761;
+
+  --Pizarra:#485a6c;
+  --Pizarra-100:#95a3ab;
+  --Pizarra-300:#667885;
+  --Pizarra-500:#485a6c;
+  --Pizarra-700:#273445;
+  --Pizarra-900:#0e141f;
+
+  --Negro:#333333;
+  --Negro-100:#666666;
+  --Negro-300:#4d4d4d;
+  --Negro-500:#333333;
+  --Negro-700:#1a1a1a;
+  --Negro-900:#000000;
+
+  /*
+  Credito a: Elementary OS
+  Para más información: https://elementary.io/brand
+  */
 }
 
-a {
-  color: #00B7FF;
+body {
+  padding: 50px;
+  background: black;
+  font: 14px Inter, Helvetica, Arial, sans-serif;
+  color:var(--Plata-100);
+}
+
+#Titulo {
+  color: var(--Arandano);
+}
+
+#Parrafo{
+  font-weight: bold;
 }
