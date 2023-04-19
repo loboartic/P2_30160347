@@ -6,4 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Moonwalker' });
 });
 
+router.get('/curriculum', function(req, res, next) {
+  res.render('curriculum', { title: 'Curriculum' });
+});
+
 module.exports = router;
