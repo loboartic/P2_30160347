@@ -1,5 +1,5 @@
 @import "colors.css";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');*/
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');*/
 
 *{
 	font-family: 'Montserrat', sans-serif;
@@ -8,18 +8,22 @@
 /*	filter: blur(5px);*/
 }
 
+/*Hoja principal*/
 .sheet{
 	margin: 60px;
-/*	padding: 5px;*/
 	border: 1px solid var(--Arandano-900);
-	border-radius: 4px;
+	border-radius: 6px;
 	display: flex;
 	flex-direction: column;
-/*	z-index: 1;*/
 	justify-content: center;
 	align-items: center;
+	background-color: var(--Plata-100);
+	box-shadow: 
+		5px 5px 5px var(--Pizarra-300), 
+		-5px -5px 5px var(--Pizarra-300);
 }
 
+/*imagen que esta dentro de la cabezera*/
 .avatar {
 	margin: 5px;
 	width: 130px auto; /* Ancho deseado */
@@ -29,13 +33,11 @@
  	box-sizing: border-box;
 }
 
+/*Cabezera*/
 .header {
-	top: 0px;
 	position: relative;
-	margin: 10px;
-	border: solid 1px;
+/*	border: 1px solid var(--Pizarra-900);*/
 	color: var(--Plata-500);
-	border-color: var(--Pizarra-900);
 	background-color: var(--Pizarra-900);
 	height: 250px auto;
 	width: 100%;
@@ -43,9 +45,12 @@
   	box-sizing: border-box;
 }
 
+/*Contenido*/
 .content{
+	margin: 15px;
+	padding: 10px;
 	border: 1px solid var(--Fresa-900);
 	height: 250px auto;
-	width: 80%;
-
+	width: 90%;
+	box-sizing: border-box;
 }
