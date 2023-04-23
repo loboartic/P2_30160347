@@ -1,26 +1,76 @@
 @import "colors.css";
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');*/
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
 
 body {
-  padding: 50px;
   background-image: url("bg.jpg");
   background-size: cover;
-  font: 14px Inter, Helvetica, Arial, sans-serif;
   color:var(--Plata-100);
 }
 
-.card{
-  border: 1px solid var(--Plata-500);
-  margin: 15px;
-  padding: 15px;
-  border-radius: 15px;
-  width: 20%;
-  height: 20%;
+
+/*
+    
+    BARRA DE NAVEGACIÓN
+
+*/
+.navbar {
+  background-color: var(--Arandano-500);
 }
 
-#Titulo {
-  color: var(--Arandano-500);
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-#Parrafo{
-  font-weight: bold;
+.navbar li {
+  float: left;
+}
+
+.navbar a {
+  display: block;
+  color: var(--Plata-100);
+  text-align: center;
+  padding: 1em;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: var(--Menta-100);
+  color: black;
+}
+
+.card {
+  margin: 1em;
+  border: 1px solid var(--Arandano-100);
+  border-radius: 8px;
+  height: 250px auto;
+  width: 90%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header {
+  padding: 5px 10px;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+/*.card-header, .card-body {
+  flex-grow: 1;
+}*/
+
+.contentField{
+  color: var(--Negro-700);
+}
+
+.titlePersonal{
+  color: var(--Arandano-900);
 }

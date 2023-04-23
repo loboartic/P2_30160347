@@ -2,55 +2,119 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');*/
 
 *{
-	font-family: 'Montserrat', sans-serif;
-}
-.sheetWithBlur{
-/*	filter: blur(5px);*/
+    font-family: 'Montserrat', sans-serif;
 }
 
-/*Hoja principal*/
-.sheet{
-	margin: 60px;
-	border: 1px solid var(--Arandano-900);
-	border-radius: 6px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background-color: var(--Plata-100);
-	box-shadow: 
-		5px 5px 5px var(--Pizarra-300), 
-		-5px -5px 5px var(--Pizarra-300);
+body{
+  background-image: url("/images/space.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
 }
 
-/*imagen que esta dentro de la cabezera*/
+/* 
+
+    HOJA PRINCIPAL 
+
+*/
+.sheet {
+    margin: 60px;
+    border: 1px solid var(--Arandano-900);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Plata-100);
+    box-shadow: 
+        8px 8px 8px var(--Arandano-300), 
+        -8px -8px 8px var(--Arandano-300);
+}
+
+/* imagen que esta dentro de la cabezera */
 .avatar {
-	margin: 5px;
-	width: 130px auto; /* Ancho deseado */
-  	height: 130px; /* Altura deseada */
- 	border-radius: 50%;
- 	border: 3px solid var(--Fresa-700);
- 	box-sizing: border-box;
+    margin: 1em;
+    width: 130px auto;
+    height: 130px;
+    border-radius: 50%;
+    border: 4px solid var(--Plata-700);
+    box-sizing: border-box;
 }
 
-/*Cabezera*/
+/* 
+
+    CABEZERA 
+
+*/
 .header {
-	position: relative;
-/*	border: 1px solid var(--Pizarra-900);*/
-	color: var(--Plata-500);
-	background-color: var(--Pizarra-900);
-	height: 250px auto;
-	width: 100%;
-	text-align: center;
-  	box-sizing: border-box;
+    position: relative;
+    color: var(--Plata-500);
+    background-color: var(--Pizarra-900);
+    height: 250px auto;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
 }
 
-/*Contenido*/
+/* 
+
+    CONTENIDO
+
+*/
 .content{
-	margin: 15px;
-	padding: 10px;
-	border: 1px solid var(--Fresa-900);
-	height: 250px auto;
-	width: 90%;
-	box-sizing: border-box;
+    margin: 1em;
+    padding: 0.5em;
+/*    border: 1px solid var(--Fresa-900);*/
+    height: 250px auto;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+.dashboard{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+
+    TARJETAS
+
+*/
+
+/* Tarjeta */
+.miniCard{
+    border: 2px solid var(--Plata-300);
+    border-radius: 8px;
+    width: 125px;
+/*    height: 2em auto;*/
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.miniCard:hover{
+    box-shadow: 
+        8px 8px 8px var(--Arandano-300), 
+        -8px -8px 8px var(--Arandano-300);
+    transition: 0.5s ease;
+}
+
+/* Cabezera de tarjeta */
+.miniCardHeader {
+    position: relative;
+    color: var(--Negro-900);
+    height: auto;
+    width: auto;
+    background-color: var(--Plata-300);
+    text-align: center;
+    padding: 0.5em;
+}
+
+/* Contenido de la tarjeta */
+.miniCardContent {
+    text-align: center;
+    padding: 1em;
 }
