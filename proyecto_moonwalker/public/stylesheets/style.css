@@ -19,6 +19,11 @@ body {
 */
 .navbar {
   background-color: var(--Arandano-500);
+  border: 2px solid var(--Arandano-500);
+  padding: 5px;
+  width: 100%;
+  height: 3em;
+  box-sizing: content-box;
 }
 
 .navbar ul {
@@ -33,6 +38,7 @@ body {
 
 .navbar a {
   display: block;
+  position: relative;
   color: var(--Plata-100);
   text-align: center;
   padding: 1em;
@@ -40,8 +46,9 @@ body {
 }
 
 .navbar a:hover {
-  background-color: var(--Menta-100);
-  color: black;
+  background-color: var(--Arandano-900);
+  color: var(--Plata-100);
+  transition: 1s;
 }
 
 .card {
