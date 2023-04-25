@@ -5,7 +5,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-body{
+body {
   background-image: url("/images/space.jpg");
   background-size: cover;
   width: 100%;
@@ -19,16 +19,16 @@ body{
 */
 .sheet {
     margin: 60px;
-    border: 1px solid var(--Arandano-900);
+    border: 1px solid var(--slate-100);
     border-radius: 6px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--Plata-100);
+    background-color: var(--neutral-60);
     box-shadow: 
-        8px 8px 8px var(--Arandano-300), 
-        -8px -8px 8px var(--Arandano-300);
+        8px 8px 8px var(--blue-60), 
+        -8px -8px 8px var(--blue-60);
 }
 
 /* imagen que esta dentro de la cabezera */
@@ -37,7 +37,7 @@ body{
     width: 130px auto;
     height: 130px;
     border-radius: 50%;
-    border: 4px solid var(--Plata-700);
+    border: 4px solid var(--neutral-60);
     box-sizing: border-box;
 }
 
@@ -48,8 +48,8 @@ body{
 */
 .header {
     position: relative;
-    color: var(--Plata-500);
-    background-color: var(--Pizarra-900);
+    color: var(--neutral-60);
+    background-color: var(--slate-100);
     height: 250px auto;
     width: 100%;
     text-align: center;
@@ -61,16 +61,20 @@ body{
     CONTENIDO
 
 */
-.content{
+.content {
     margin: 1em;
     padding: 0.5em;
-/*    border: 1px solid var(--Fresa-900);*/
     height: 250px auto;
     width: 90%;
     box-sizing: border-box;
 }
 
-.dashboard{
+.textContent {
+    margin: 2.5em;
+    text-align: justify;
+}
+
+.dashboard {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -86,29 +90,28 @@ body{
 */
 
 /* Tarjeta */
-.miniCard{
-    border: 2px solid var(--Plata-300);
+.miniCard {
+    border: 2px solid var(--slate-60);
     border-radius: 8px;
     width: 125px;
-/*    height: 2em auto;*/
     margin: 10px;
     box-sizing: border-box;
 }
 
-.miniCard:hover{
+.miniCard:hover {
     box-shadow: 
-        8px 8px 8px var(--Arandano-300), 
-        -8px -8px 8px var(--Arandano-300);
+        8px 8px 8px var(--blue-60), 
+        -8px -8px 8px var(--blue-60);
     transition: 0.5s ease;
 }
 
 /* Cabezera de tarjeta */
 .miniCardHeader {
     position: relative;
-    color: var(--Negro-900);
+    color: var(--neutral-60);
     height: auto;
     width: auto;
-    background-color: var(--Plata-300);
+    background-color: var(--slate-60);
     text-align: center;
     padding: 0.5em;
 }

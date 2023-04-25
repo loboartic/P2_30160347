@@ -6,9 +6,10 @@
 }
 
 body {
-  background-image: url("bg.jpg");
+  background-image: url("/images/bg.jpg");
   background-size: cover;
-  color:var(--Plata-100);
+/*  color:var(--Plata-100);*/
+  color: var(--neutral-40);
 }
 
 
@@ -18,8 +19,8 @@ body {
 
 */
 .navbar {
-  background-color: var(--Arandano-500);
-  border: 2px solid var(--Arandano-500);
+  background-color: var(--blue-60);
+  border: 2px solid var(--blue-60);
   padding: 5px;
   width: 100%;
   height: 3em;
@@ -39,21 +40,21 @@ body {
 .navbar a {
   display: block;
   position: relative;
-  color: var(--Plata-100);
+  color: var(--neutral-40);
   text-align: center;
   padding: 1em;
   text-decoration: none;
 }
 
 .navbar a:hover {
-  background-color: var(--Arandano-900);
-  color: var(--Plata-100);
+  background-color: var(--blue-100);
+  color: var(--neutral-40);
   transition: 1s;
 }
 
 .card {
   margin: 1em;
-  border: 1px solid var(--Arandano-100);
+  border: 1px solid var(--blue-40);
   border-radius: 8px;
   height: 250px auto;
   width: 90%;
@@ -75,9 +76,9 @@ body {
 }*/
 
 .contentField{
-  color: var(--Negro-700);
+  color: var(--slate-100);
 }
 
 .titlePersonal{
-  color: var(--Arandano-900);
+  color: var(--blue-100);
 }

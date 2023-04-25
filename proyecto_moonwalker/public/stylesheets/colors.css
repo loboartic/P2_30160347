@@ -1,81 +1,75 @@
-/* Nueva paleta de colores */
 :root{
-  /*Esquema de color usado en la página*/
+  /* Purple */
+  --purple-20: #d5c8fb;
+  --purple-40: #aa8df8;
+  --purple-60: #895ef7;
+  --purple-80: #6438e0;
+  --purple-100: #443276;
+  /* Pink */
+  --color-20: #f8cae8;
+  --color-40: #ff97da;
+  --color-60: #ff61c7;
+  --color-80: #ff22b1;
+  --color-100: #88145f;
+  /* Indigo */
+  --indigo-20: #c3cffa;
+  --indigo-40: #879df2;
+  --indigo-60: #6a84ed;
+  --indigo-80: #4461d7;
+  --indigo-100: #323e9c;
+  /* Blue */
+  --blue-20 #a3e0fc;
+  --blue-40: #63c0f9;
+  --blue-60: #4da2f8;
+  --blue-80: #3d8aed;
+  --blue-100: #2b59ab;
+  /* Teal */
+  --teal-20: #82ebf1;
+  --teal-40: #82ebf1;
+  --teal-60: #1fcbdc;
+  --teal-80: #0390a9;
+  --teal-100: #005c6f;
+  /* Green */
+  --green-20: #baf8dd;
+  --green-40: #85f1b8;
+  --green-60: #79e3aa;
+  --green-80: #59c894;
+  --green-100: #518d7b;
+  /* Yellow */
+  --yellow-20: #ffeab6;
+  --yellow-40: #ffd56a;
+  --yellow-60: #ffc63c;
+  --yellow-80: #feb51f;
+  --yellow-100: #ce8d4f;
+  /* Orange */
+  --orange-20: #ffcfb7;
+  --orange-40: #ff9c73;
+  --orange-60: #ff7641;
+  --orange-80: #f45721;
+  --orange-100: #ac241b;
+  /* Red */
+  --red-20: #fba7bf;
+  --red-40: #ff7e98;
+  --red-60: #f03063;
+  --red-80: #8d0217;
+  --red-100: #8d0217;
+  /* Brown */
+  --brown-20: #e9b78c;
+  --brown-40: #d47a3c;
+  --brown-60: #ca6419;
+  --brown-80: #b74d00;
+  --brown-100: #703713;
+  /* Slate */
+  --slate-20: #727491;
+  --slate-40: #494e6a;
+  --slate-60: #373753;
+  --slate-80: #1d1c39;
+  --slate-100: #0b0e1f;
+  /* Nuetral */
+  --neutral-20: #f5f7fa;
+  --neutral-40: #e7ebf1;
+  --neutral-60: #d6dee7;
+  --neutral-80: #c5cada;
+  --neutral-100: #a7acc5;
 
-  --Fresa-100: #ff8c82;
-  --Fresa-300: #ed5353;
-  --Fresa-500: #c6262e;
-  --Fresa-700: #a10705;
-  --Fresa-900: #7a0000;
-
-  --Naranja-100:#ffc27d;
-  --Naranja-300:#ffa154;
-  --Naranja-500:#f37329;
-  --Naranja-700:#cc3b02;
-  --Naranja-900:#a62100;
- 
-  --Plantano-100:#fff394;
-  --Plantano-300:#ffe16b;
-  --Plantano-500:#f9c440;
-  --Plantano-700:#d48e15;
-  --Plantano-900:#ad5f00;
- 
-  --Lima-100: #d1ff82;
-  --Lima-300: #9bdb4d;
-  --Lima-500: #68b723;
-  --Lima-700: #3a9104;
-  --Lima-900: #206b00;
-
-  --Menta-100:#89ffdd;
-  --Menta-300:#43d6b5;
-  --Menta-500:#28bca3;
-  --Menta-700:#0e9a83;
-  --Menta-900:#007367;
-
-  --Arandano-100: #8cd5ff;
-  --Arandano-300: #64baff;
-  --Arandano-500: #3689e6;
-  --Arandano-700: #0d52bf;
-  --Arandano-900: #002e99;
-
-  --Uva-100:#e4c6fa;
-  --Uva-300:#cd9ef7;
-  --Uva-500:#a56de2;
-  --Uva-700:#7239b3;
-  --Uva-900:#452981;
-
-  --Chicle-100:#fe9ab8;
-  --Chicle-300:#f4679d;
-  --Chicle-500:#de3e80;
-  --Chicle-700:#bc245d;
-  --Chicle-900:#910e38;
-
-  --Cacao-100:#a3907c;
-  --Cacao-300:#8a715e;
-  --Cacao-500:#715344;
-  --Cacao-700:#57392d;
-  --Cacao-900:#3d211b;
-
-  --Plata-100:#fafafa;
-  --Plata-300:#d4d4d4;
-  --Plata-500:#abacae;
-  --Plata-700:#7e8087;
-  --Plata-900:#555761;
-
-  --Pizarra-100:#95a3ab;
-  --Pizarra-300:#667885;
-  --Pizarra-500:#485a6c;
-  --Pizarra-700:#273445;
-  --Pizarra-900:#0e141f;
-
-  --Negro-100:#666666;
-  --Negro-300:#4d4d4d;
-  --Negro-500:#333333;
-  --Negro-700:#1a1a1a;
-  --Negro-900:#000000;
-
-  /*
-  Credito a: Elementary OS
-  Para más información: https://elementary.io/brand
-  */
 }
