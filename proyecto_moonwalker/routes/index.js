@@ -10,4 +10,8 @@ router.get('/curriculum', function(req, res, next) {
   res.render('curriculum', { title: 'Curriculum' });
 });
 
+router.get('/contact', function(req, res, next) {
+  res.render('contact', { title: 'Contacto' });
+});
+
 module.exports = router;

@@ -1,4 +1,5 @@
 @import "colors.css";
+@import "navbar.css";
 /*@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');*/
 
 *{
@@ -6,74 +7,46 @@
 }
 
 body {
-  background-image: url("/images/bg.jpg");
+  background-image: url("/images/bg.png");
   background-size: cover;
 /*  color:var(--Plata-100);*/
   color: var(--neutral-40);
 }
 
-
-/*
-    
-    BARRA DE NAVEGACIÓN
-
-*/
-.navbar {
-  background-color: var(--blue-60);
-  border: 2px solid var(--blue-60);
-  padding: 5px;
-  width: 100%;
-  height: 3em;
-  box-sizing: content-box;
-}
-
-.navbar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar li {
-  float: left;
-}
-
-.navbar a {
-  display: block;
-  position: relative;
-  color: var(--neutral-40);
-  text-align: center;
-  padding: 1em;
-  text-decoration: none;
-}
-
-.navbar a:hover {
-  background-color: var(--blue-100);
-  color: var(--neutral-40);
-  transition: 1s;
-}
-
 .card {
   margin: 1em;
-  border: 1px solid var(--blue-40);
-  border-radius: 8px;
-  height: 250px auto;
-  width: 90%;
-  box-sizing: border-box;
+  padding: 1em;
+  border: 1px solid var(--neutral-20);
+  border-radius: 10px;
+  height: auto;
+  width: 40%;
+  box-sizing: content-box;
+  backdrop-filter: blur(10px);
+}
+
+.card:hover{
+  transition: all 0.5s ease;
+  box-shadow: 0 0 15px var(--green-60);
+}
+
+.container {
   display: flex;
   flex-direction: column;
 }
 
 .card-header {
-  padding: 5px 10px;
+  padding: 1em;
 }
 
 .card-body {
-  padding: 10px;
+  padding: 1em;
 }
 
 /*.card-header, .card-body {
   flex-grow: 1;
 }*/
+
+
 
 .contentField{
   color: var(--slate-100);

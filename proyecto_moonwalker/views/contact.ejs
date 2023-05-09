@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/contact.css'/>
+  </head>
+  <body>
+    
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/curriculum">Ver Curriculum</a></li>
+          <li><a href="/contact">Contactar</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <form class="form-contact">
+    	<p>
+    		Sus opiniones son importantes, por favor dejé su retroalimentación aquí
+    	</p>
+
+    	<input id="name" type="text" name="lastname" placeholder="Ingrese su nombre y apellido, por favor">
+    	<input id="mail" type="text" name="mail" placeholder="Ingrese su correo">
+    	<input id="comment" type="text" name="comment" placeholder="Indique aqui su comentario">
+      <button type="submit" name="submit" value="enviar">Enviar</button>
+    </form>
+  </body>
+</html>
