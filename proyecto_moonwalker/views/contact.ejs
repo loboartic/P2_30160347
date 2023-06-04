@@ -3,6 +3,7 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/contact.css'/>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdYkBgmAAAAANAkpJ_Eis19McYXdC9DEtj-q0U-"></script>
   </head>
   <body>
     
@@ -16,13 +17,13 @@
       </nav>
     </header>
 
-    <form class="form-contact" action="/contact/savecomment" method="post">
+    <form class="form-contact" action="/contact/savecomment" method="POST">
     	<p>
     		Sus opiniones son importantes, por favor dejé su retroalimentación aquí
     	</p>
 
-    	<input id="name" type="text" name="lastname" placeholder="Ingrese su nombre y apellido, por favor">
-    	<input id="mail" type="text" name="mail" placeholder="Ingrese su correo">
+    	<input id="name" type="text" name="name" placeholder="Ingrese su nombre y apellido, por favor">
+    	<input id="email" type="text" name="email" placeholder="Ingrese su correo">
     	<input id="comment" type="text" name="comment" placeholder="Indique aqui su comentario">
       <button type="submit" name="submit" value="enviar">Enviar</button>
     </form>
