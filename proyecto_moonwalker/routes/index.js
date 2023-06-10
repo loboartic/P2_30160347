@@ -1,13 +1,13 @@
 const express = require("express");
 const db = require("../models/database");
+const axios = require("axios");
 const router = express();
 
 // Configuración del Middleware para los datos
 router.use(express.urlencoded({ extended: false }));
-router.use(express.json())
+router.use(express.json());
 
 // el Error es Error: Incorrect datetime value: '2023-06-04T10:50:03.966Z' for column 'timestamp' at row 1
-
 
 /*
   GETS
@@ -28,14 +28,34 @@ router.get("/contact", (req, res, next) => {
     POSTINGS
 */
 
-router.post("/contact/savecomment", (req, res) => {
+router.post("/contact/savecomment", async (req, res) => {
+    // Valores ReCatcha
+    const recaptchaResponse = req.body["g-recaptcha-response"];
+    const recaptchaSecret = "6LdYkBgmAAAAADVC-mD4ji4YEtAqSjCHgIvcyTdq";
+
+    // try {
+    //     const response = await axios.post(
+    //         "https://www.google.com/recaptcha/api/siteverify",
+    //         {
+    //             params: {
+    //                 secret: recaptchaSecret,
+    //                 response: recaptchaResponse,
+    //             },
+    //         }
+    //     );
+    //     if (!response.data.success) {
+    //         return res.status(400).send("Error de recaptcha");
+    //     }
+    // } catch (error) {
+    //     console.log("Error al verificar recaptcha: ", error);
+    //     return res.status(500).send("Error al verificar reCAPTCHA");
+    // }
+    // Valores para el formulario
     const { email, name, comment } = req.body;
     const ip = req.ip;
-    // const timestamp = new Date().toISOString();
-    //const timestamp = new Date().toLocaleString();
-    const timestamp = new Date().toISOString().slice(0, 19).replace('T', ' ');
-    console.log(req.params)
-    console.log(email, name, comment, ip, timestamp)
+    const timestamp = new Date().toISOString().slice(0, 19).replace("T", " ");
+    console.log(req.params);
+    console.log(email, name, comment, ip, timestamp);
 
     const insertQuery =
         "INSERT INTO contacts (email, name, comment, ip, timestamp) VALUES (?, ?, ?, ?, ?)";
@@ -44,7 +64,7 @@ router.post("/contact/savecomment", (req, res) => {
         insertQuery,
         [email, name, comment, ip, timestamp],
         (err, result) => {
-            console.log(`el Error es ${err}`)
+            console.log(`el Error es ${err}`);
             if (err) {
                 return res
                     .status(500)
